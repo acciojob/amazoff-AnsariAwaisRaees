@@ -124,34 +124,6 @@ public class OrderRepository {
             }
         }
         return time;
-<<<<<<< HEAD
-    }
-
-    public String deletePartnerById( String partnerId){
-
-        //Delete the partnerId
-        //And push all his assigned orders to unassigned orders.
-        deliveryPartnerHashMap.remove(partnerId);
-        pairHashMap.remove(partnerId);
-
-        return partnerId + " removed successfully";
-    }
-
-
-    public String deleteOrderById( String orderId){
-
-        //Delete an order and also
-        // remove it from the assigned order of that partnerId
-        orderHashMap.remove(orderId);
-
-        for(List<String> ls : pairHashMap.values()){
-            for(int i=0;i<ls.size();i++){
-                if(ls.get(i).equals(orderId)) ls.remove(orderId);
-            }
-        }
-        return orderId + " removed successfully";
-=======
->>>>>>> a0d6657993e6e9afa06d557f78bffc038502a9c0
     }
 
     public String deletePartnerById( String partnerId){

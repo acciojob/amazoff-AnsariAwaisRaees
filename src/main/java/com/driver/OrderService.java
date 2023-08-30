@@ -77,26 +77,6 @@ public class OrderService {
         //Return the time when that partnerId will deliver his last delivery order.
 
         return orderRepository.getLastDeliveryTimeByPartnerId(partnerId);
-<<<<<<< HEAD
-    }
-
-    public String deletePartnerById( String partnerId){
-
-        //Delete the partnerId
-        //And push all his assigned orders to unassigned orders.
-
-        return orderRepository.deletePartnerById(partnerId);
-    }
-
-
-    public String deleteOrderById( String orderId){
-
-        //Delete an order and also
-        // remove it from the assigned order of that partnerId
-
-        return orderRepository.deleteOrderById(orderId);
-=======
->>>>>>> a0d6657993e6e9afa06d557f78bffc038502a9c0
     }
 
     public String deletePartnerById( String partnerId){
